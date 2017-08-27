@@ -16,5 +16,20 @@ namespace EvenOrOdd
         {
             InitializeComponent();
         }
+
+        private void btnEvenOdd_Click(object sender, EventArgs e)
+        {
+            int number;
+            number = int.Parse(Microsoft.VisualBasic.Interaction.InputBox("Enter a number","",""));
+
+            if (number % 2 == 0)
+            {
+                MessageBox.Show("Even");
+            }
+            else
+            {
+                MessageBox.Show("Odd");
+            }
+        }
     }
 }

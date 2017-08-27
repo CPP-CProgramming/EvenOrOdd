@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnEvenOdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnEvenOdd
+            // 
+            this.btnEvenOdd.Location = new System.Drawing.Point(154, 120);
+            this.btnEvenOdd.Name = "btnEvenOdd";
+            this.btnEvenOdd.Size = new System.Drawing.Size(140, 60);
+            this.btnEvenOdd.TabIndex = 0;
+            this.btnEvenOdd.Text = "Even or Odd";
+            this.btnEvenOdd.UseVisualStyleBackColor = true;
+            this.btnEvenOdd.Click += new System.EventHandler(this.btnEvenOdd_Click);
             // 
             // evenOrOdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.ClientSize = new System.Drawing.Size(440, 349);
+            this.Controls.Add(this.btnEvenOdd);
             this.Name = "evenOrOdd";
             this.Text = "Even or Odd";
             this.ResumeLayout(false);
@@ -42,6 +54,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnEvenOdd;
     }
 }
 
