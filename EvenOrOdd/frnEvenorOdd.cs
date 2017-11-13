@@ -22,7 +22,7 @@ namespace EvenOrOdd
             int number;
             number = int.Parse(Microsoft.VisualBasic.Interaction.InputBox("Enter a number","",""));
 
-            if (number % 2 == 0)
+            if ((number & 1) == 0)
             {
                 MessageBox.Show("Even");
             }
